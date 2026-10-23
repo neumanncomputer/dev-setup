@@ -1,0 +1,25 @@
+[project]
+name = "your-project-name"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    # --- Lint & Formatting (コードの品質) ---
+    "ruff",         # Linter & Formatter
+    "mypy",         # 型チェック
+
+    # --- Security (脆弱性診断) ---
+    "pip-audit",    # 依存ライブラリの脆弱性チェック
+    "bandit",       # Pythonコードのセキュリティ診断
+
+    # --- Testing (動作確認) ---
+    "pytest",       # テストフレームワーク
+]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100

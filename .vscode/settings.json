@@ -1,0 +1,43 @@
+{
+  // ===== VS Code 本体の設定 =====
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.showSlider": "always",
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.showFoldingControls": "always",
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "scm.defaultViewMode": "tree",
+  "scm.graph.badges": "all",
+  "window.density.layout": "compact",
+  "workbench.activityBar.compact": true,
+  "workbench.colorTheme": "Light 2026",
+  "workbench.editor.wrapTabs": true,
+  // ===== 拡張機能に依存する設定 =====
+  // Ruff
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // Claude Code
+  "claudeCode.useCtrlEnterToSend": true,
+  // Mypy Type Checker
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  // Pylance
+  "python.analysis.typeCheckingMode": "off",
+  // Draw.io Integration
+  "workbench.editorAssociations": {
+    "*.svg": "hediet.vscode-drawio-text"
+  }
+}

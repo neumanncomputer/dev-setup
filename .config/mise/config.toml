@@ -1,0 +1,13 @@
+# グローバルで使用するツールとバージョン
+[tools]
+# ===== 言語・パッケージ管理 =====
+node = "lts"
+pnpm = "latest"
+uv = "latest"
+
+# ===== CLI ツール =====
+gh = "latest"
+
+# ===== シェル =====
+atuin = "latest"
+starship = "latest"
